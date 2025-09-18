@@ -65,7 +65,8 @@ Groq LLM Provider: Executes inference with fast, efficient large language models
 
 Python.
 
-## Example "User Query" :- (Lot's of prompts and models were tried. Below output corresponds to using Model 'openai/gpt-oss-120b' and keeping 'temperature' close to 0)
+## Example "User Query" :- 
+(Lot's of prompts and models were tried. Below output corresponds to using Model 'openai/gpt-oss-120b' and keeping 'temperature' close to 0)
 
 Generate a quiz consisting of around 12 technical multiple choice questions (MCQs). Assist in creating such a quiz , and after listing all questions then towards the end list answers for them with brief statements. Try your best to generate quiz questions based on the available data that you're receiving as part of contextual understanding in your prompt.
 
