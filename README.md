@@ -6,9 +6,13 @@ This project demonstrates how to build an AI workflow using the Langflow framewo
 
 ## Goal
 The primary goal of this project is to:
+
 Ingest domain-specific documents.
+
 Use them as contextual knowledge for an LLM prompt.
+
 Automatically generate a set of MCQs (Multiple Choice Questions) as a quiz.
+
 Demonstrate an AI workflow where external knowledge retrieval, reasoning, and LLM inference are combined seamlessly.
 
 ## Solution Overview
@@ -59,33 +63,33 @@ Astra DB (Vector Database): Stores document embeddings for semantic search.
 
 Groq LLM Provider: Executes inference with fast, efficient large language models.
 
-Python
+Python.
 
-## Example Input :- (Lot's of prompts and models were tried. Below output corresponds to using Model 'openai/gpt-oss-120b' and keeping 'temperature' close to 0)
+## Example "User Query" :- (Lot's of prompts and models were tried. Below output corresponds to using Model 'openai/gpt-oss-120b' and keeping 'temperature' close to 0)
 
 Generate a quiz consisting of around 12 technical multiple choice questions (MCQs). Assist in creating such a quiz , and after listing all questions then towards the end list answers for them with brief statements. Try your best to generate quiz questions based on the available data that you're receiving as part of contextual understanding in your prompt.
 
 
-## Example Output :-
+## Example "Output" :-
 
 Technical Quiz – Retrieval‑Augmented Generation, Prompt Engineering & Markdown Formatting
 (All questions are based on the discussion excerpt you provided.)
 
 Questions
 
-1	Why can’t you simply “remember” a 500‑page PDF inside a language model’s prompt?	
+1 Why can’t you simply “remember” a 500‑page PDF inside a language model’s prompt?	
 A. The model’s context window is limited in size.
 B. PDFs are encrypted by default.
 C. The model cannot read any text at all.
 D. PDFs contain hidden watermarks that block the model.
 
-2	Which technique is suggested for answering user queries that refer to large documents?	
+2 Which technique is suggested for answering user queries that refer to large documents?	
 A. Fine‑tuning the model on the whole PDF.
 B. Retrieval‑augmented generation (RAG).
 C. Converting the PDF to an image and feeding it to the model.
 D. Ignoring the document and answering from memory.
 
-3	In a RAG pipeline, what is the typical order of operations?	
+3 In a RAG pipeline, what is the typical order of operations?	
 A. Generate → Retrieve → Post‑process.
 B. Retrieve → Augment prompt → Generate.
 C. Fine‑tune → Retrieve → Generate.
