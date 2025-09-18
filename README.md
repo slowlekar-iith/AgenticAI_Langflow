@@ -96,9 +96,11 @@ C. Fine‑tune → Retrieve → Generate.
 D. Tokenize → Summarize → Store.
 
 Answers & Brief Explanations
-#	Correct Answer	Explanation
+
 1	A	Language models have a finite context window (e.g., 4 k‑8 k tokens). A 500‑page PDF far exceeds this limit.
+
 2	B	Retrieval‑augmented generation fetches relevant passages from external sources and feeds them to the model.
+
 3	B	First retrieve relevant chunks, then augment the prompt with those chunks, finally let the model generate the answer.
 
 
