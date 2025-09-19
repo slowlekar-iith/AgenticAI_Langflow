@@ -68,7 +68,7 @@ Groq LLM Provider: Executes inference with fast, efficient large language models
 
 Python.
 
-## Example "User Query" :- 
+## Example "Input"/"User Query" :- 
 (Lot's of prompts and models were tried. Below output corresponds to using Model 'openai/gpt-oss-120b' and keeping 'temperature' close to 0)
 
 Generate a quiz consisting of around 12 technical multiple choice questions (MCQs). Assist in creating such a quiz , and after listing all questions then towards the end list answers for them with brief statements. Try your best to generate quiz questions based on the available data that you're receiving as part of contextual understanding in your prompt.
@@ -76,37 +76,9 @@ Generate a quiz consisting of around 12 technical multiple choice questions (MCQ
 
 ## Example "Output" :-
 
-Technical Quiz – Retrieval‑Augmented Generation, Prompt Engineering & Markdown Formatting
-(All questions are based on the discussion excerpt you provided.)
+![image alt](https://github.com/slowlekar-iith/AgenticAI_Langflow/blob/e2b62770c7705540608b0f4fb4d1a451d0990213/Images/Langflow_MCQ_OutSample1.png)
 
-Questions
-
-1 Why can’t you simply “remember” a 500‑page PDF inside a language model’s prompt?	
-A. The model’s context window is limited in size.
-B. PDFs are encrypted by default.
-C. The model cannot read any text at all.
-D. PDFs contain hidden watermarks that block the model.
-
-2 Which technique is suggested for answering user queries that refer to large documents?	
-A. Fine‑tuning the model on the whole PDF.
-B. Retrieval‑augmented generation (RAG).
-C. Converting the PDF to an image and feeding it to the model.
-D. Ignoring the document and answering from memory.
-
-3 In a RAG pipeline, what is the typical order of operations?	
-A. Generate → Retrieve → Post‑process.
-B. Retrieve → Augment prompt → Generate.
-C. Fine‑tune → Retrieve → Generate.
-D. Tokenize → Summarize → Store.
-
-Answers & Brief Explanations
-
-1	A	Language models have a finite context window (e.g., 4 k‑8 k tokens). A 500‑page PDF far exceeds this limit.
-
-2	B	Retrieval‑augmented generation fetches relevant passages from external sources and feeds them to the model.
-
-3	B	First retrieve relevant chunks, then augment the prompt with those chunks, finally let the model generate the answer.
-
+![image alt](https://github.com/slowlekar-iith/AgenticAI_Langflow/blob/e2b62770c7705540608b0f4fb4d1a451d0990213/Images/Langflow_MCQ_OutSample2.png)
 
 ... up to Q12
 
