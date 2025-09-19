@@ -54,6 +54,9 @@ Output Delivery: The generated quiz is returned in a human-readable format.
           │   (MCQs)  │
           └──────────────┘
 
+## Actual Workflow Reference
+
+![image alt](https://github.com/slowlekar-iith/AgenticAI_Langflow/blob/e2b62770c7705540608b0f4fb4d1a451d0990213/Images/Langflow_MCQFlow.png)
 
 ## Technology Stack
 
