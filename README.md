@@ -54,6 +54,18 @@ Output Delivery: The generated quiz is returned in a human-readable format.
           │   (MCQs)  │
           └──────────────┘
 
+
+### Box Descriptions:
+1. **Documents**: Represents the source of domain-specific knowledge to be ingested.
+2. **Upload & Embed**: The process of embedding documents into a vector database.
+3. **Astra Vector Database**: Stores document embeddings for efficient similarity-based retrieval.
+4. **Retrieve Relevant Context**: Fetches document chunks relevant to the user query.
+5. **Langflow Workflow**: Orchestrates the process of combining retrieved context with the user query.
+6. **Assemble Prompt**: Constructs the final prompt for the LLM using the query and context.
+7. **Groq LLM**: Executes inference to generate multiple-choice questions (MCQs).
+8. **Generate MCQs**: Produces quiz questions based on the assembled prompt.
+9. **Output (MCQs)**: Delivers the generated quiz in a structured, human-readable format.
+
 ## Actual Workflow Reference
 
 ![image alt](https://github.com/slowlekar-iith/AgenticAI_Langflow/blob/e2b62770c7705540608b0f4fb4d1a451d0990213/Images/Langflow_MCQFlow.png)
